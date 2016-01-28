@@ -38,13 +38,23 @@ $('.navbar-collapse ul li a').click(function() {
   $('.navbar-toggle:visible').click();
 });
 
+
 $(document).ready(function() {
+  NProgress.start();
+  NProgress.configure({
+    showSpinner: false
+  });
+
   function stopVideos() {
     $("video").each(function() {
       this.pause();
     });
   }
   $(".close-class").click(stopVideos);
+});
+
+$(window).load(function() {
+  NProgress.stop();
 });
 
 $('div.modal').on('show.bs.modal', function() {
@@ -61,11 +71,4 @@ $('div.modal').on('show.bs.modal', function() {
 $('div.modal').on('hide', function() {
   var hash = this.id;
   history.pushState('', document.title, window.location.pathname);
-});
-
-$(document).on('pjax:start', function() {
-  NProgress.start();
-});
-$(document).on('pjax:end', function() {
-  NProgress.done();
 });
