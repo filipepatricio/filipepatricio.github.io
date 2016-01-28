@@ -62,3 +62,10 @@ $('div.modal').on('hide', function() {
   var hash = this.id;
   history.pushState('', document.title, window.location.pathname);
 });
+
+$(document).on('pjax:start', function() {
+  NProgress.start();
+});
+$(document).on('pjax:end', function() {
+  NProgress.done();
+});
