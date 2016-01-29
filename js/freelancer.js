@@ -54,7 +54,7 @@ $(document).ready(function() {
 });
 
 $(window).load(function() {
-  NProgress.stop();
+  NProgress.done();
 });
 
 $('div.modal').on('show.bs.modal', function() {
