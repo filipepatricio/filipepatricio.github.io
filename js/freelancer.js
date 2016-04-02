@@ -45,13 +45,14 @@ $(document).ready(function() {
     showSpinner: false
   });
 
-  function stopVideos() {
-    $("video").each(function() {
-      this.pause();
-    });
-  }
   $(".close-class").click(stopVideos);
 });
+
+function stopVideos() {
+  $("video").each(function() {
+    this.pause();
+  });
+}
 
 $(window).load(function() {
   NProgress.done();
@@ -61,9 +62,11 @@ $('div.modal').on('show.bs.modal', function() {
   var modal = this;
   var hash = modal.id;
   window.location.hash = hash;
+  //Prevent browser to go Back when a modal is showing.. just close modal 
   window.onhashchange = function() {
     if (!location.hash) {
       $(modal).modal('hide');
+      stopVideos();
     }
   };
 });
