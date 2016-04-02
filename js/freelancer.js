@@ -45,8 +45,12 @@ $(document).ready(function() {
     showSpinner: false
   });
 
-  $(".close-class").click(stopVideos);
+  $(".close-class").click(goBack);
 });
+
+function goBack() {
+  window.history.back();
+}
 
 function stopVideos() {
   $("video").each(function() {
@@ -58,11 +62,12 @@ $(window).load(function() {
   NProgress.done();
 });
 
+//Back Action when is showing Modal
 $('div.modal').on('show.bs.modal', function() {
   var modal = this;
   var hash = modal.id;
   window.location.hash = hash;
-  //Prevent browser to go Back when a modal is showing.. just close modal 
+  //Prevent browser to go Back when a modal is showing.. just close modal
   window.onhashchange = function() {
     if (!location.hash) {
       $(modal).modal('hide');
