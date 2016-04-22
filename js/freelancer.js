@@ -6,6 +6,13 @@
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
+  if (window.location.hash) {
+    var hash = window.location.hash;
+    $(hash).modal('toggle');
+  }
+});
+
+$(function() {
   $('body').on('click', '.page-scroll a', function(event) {
     var $anchor = $(this);
     $('html, body').stop().animate({
