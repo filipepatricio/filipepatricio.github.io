@@ -8,7 +8,7 @@
 $(function() {
   if (window.location.hash) {
     var hash = window.location.hash;
-    $(hash).modal('toggle');
+    $(hash).modal('show');
   }
 });
 
@@ -73,6 +73,7 @@ $(window).load(function() {
 $('div.modal').on('show.bs.modal', function() {
   var modal = this;
   var hash = modal.id;
+  history.pushState('', document.title, window.location.pathname);
   window.location.hash = hash;
   //Prevent browser to go Back when a modal is showing.. just close modal
   window.onhashchange = function() {
