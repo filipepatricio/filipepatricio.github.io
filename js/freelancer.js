@@ -47,20 +47,15 @@ $('.navbar-collapse ul li a').click(function() {
 
 
 $(document).ready(function() {
+  $(".close-class").click(goBack);
   NProgress.start();
   NProgress.configure({
     showSpinner: false
   });
-
-  $(".close-class").click(goBack);
 });
 
 function goBack() {
   window.history.back();
-  var hash = this.id;
-  window.location.hash = hash;
-  stopVideos();
-  history.pushState('', document.title, window.location.pathname);
 }
 
 function stopVideos() {
