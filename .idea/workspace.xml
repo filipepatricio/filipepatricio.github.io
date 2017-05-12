@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac2c5e5f-4d9b-451c-8507-6a0e092cb33b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/contact_me.js" afterPath="$PROJECT_DIR$/js/contact_me.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,12 +17,15 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
+      <file leaf-file-name="contact_me.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/contact_me.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="23" column="122212" lean-forward="false" selection-start-line="23" selection-start-column="122212" selection-end-line="23" selection-end-column="122212" />
-              <folding />
+            <state relative-caret-position="-131">
+              <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+              <folding>
+                <marker date="1494600825000" expanded="true" signature="1415:1422" ph="×" />
+                <marker date="1494600825000" expanded="true" signature="2014:2021" ph="×" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -37,10 +39,11 @@
       <find>stopVideos()</find>
       <find>http:/fi</find>
       <find>close-class</find>
-      <find>sentMessage</find>
-      <find>contactForm</find>
       <find>padd</find>
       <find>padding: 10px 15px;</find>
+      <find>padding:</find>
+      <find>sentMessage</find>
+      <find>contactForm</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -51,9 +54,9 @@
       <list>
         <option value="$PROJECT_DIR$/js/freelancer.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/contact_me.js" />
         <option value="$PROJECT_DIR$/css/freelancer.css" />
         <option value="$PROJECT_DIR$/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/js/contact_me.js" />
       </list>
     </option>
   </component>
@@ -286,7 +289,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6077000" />
+    <option name="totallyTimeSpent" value="6370000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -346,29 +349,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/contact_me.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding>
-            <marker date="1494599597000" expanded="true" signature="1387:1394" ph="×" />
-            <marker date="1494599597000" expanded="true" signature="1986:1993" ph="×" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/freelancer.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="290" column="1" lean-forward="true" selection-start-line="290" selection-start-column="1" selection-end-line="290" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="379" column="62" lean-forward="true" selection-start-line="379" selection-start-column="62" selection-end-line="379" selection-end-column="62" />
           <folding />
         </state>
       </provider>
@@ -378,6 +362,25 @@
         <state relative-caret-position="449">
           <caret line="23" column="122212" lean-forward="false" selection-start-line="23" selection-start-column="122212" selection-end-line="23" selection-end-column="122212" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="368" column="56" lean-forward="false" selection-start-line="368" selection-start-column="45" selection-end-line="368" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/contact_me.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-131">
+          <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding>
+            <marker date="1494600825000" expanded="true" signature="1415:1422" ph="×" />
+            <marker date="1494600825000" expanded="true" signature="2014:2021" ph="×" />
+          </folding>
         </state>
       </provider>
     </entry>

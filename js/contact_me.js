@@ -22,7 +22,8 @@ $(function() {
       }
       $.ajax({
         url: "//formspree.io/facpatricio@gmail.com",
-        type: "POST",
+        method: "POST",
+        dataType: "json",
         data: {
           name: name,
           phone: phone,
