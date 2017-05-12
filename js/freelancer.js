@@ -57,6 +57,10 @@ $(document).ready(function() {
 
 function goBack() {
   window.history.back();
+  var hash = this.id;
+  window.location.hash = hash;
+  stopVideos();
+  history.pushState('', document.title, window.location.pathname);
 }
 
 function stopVideos() {
