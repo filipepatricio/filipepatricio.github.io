@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac2c5e5f-4d9b-451c-8507-6a0e092cb33b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/freelancer.js" afterPath="$PROJECT_DIR$/js/freelancer.js" />
-    </list>
+    <list default="true" id="ac2c5e5f-4d9b-451c-8507-6a0e092cb33b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -244,7 +242,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3703000" />
+    <option name="totallyTimeSpent" value="3725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
