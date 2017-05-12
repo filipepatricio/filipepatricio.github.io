@@ -87,5 +87,6 @@ $('div.modal').on('show.bs.modal', function() {
 $('div.modal').on('hide', function() {
   var hash = this.id;
   window.location.hash = hash;
+  stopVideos();
   history.pushState('', document.title, window.location.pathname);
 });
