@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac2c5e5f-4d9b-451c-8507-6a0e092cb33b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/js/contact_me.js" afterPath="$PROJECT_DIR$/js/contact_me.js" />
-      <change beforePath="$PROJECT_DIR$/mail/contact_me.php" afterPath="$PROJECT_DIR$/mail/contact_me.php" />
+      <change beforePath="$PROJECT_DIR$/node_modules/balanced-match/README.md" afterPath="$PROJECT_DIR$/node_modules/balanced-match/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="598" column="34" lean-forward="true" selection-start-line="598" selection-start-column="34" selection-end-line="598" selection-end-column="34" />
+              <caret line="598" column="34" lean-forward="false" selection-start-line="598" selection-start-column="34" selection-end-line="598" selection-end-column="34" />
               <folding>
                 <element signature="e#28445#28451#0" expanded="true" />
               </folding>
@@ -33,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/js/contact_me.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="409">
-              <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+              <caret line="29" column="10" lean-forward="false" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
               <folding>
                 <marker date="1529077172857" expanded="true" signature="1390:1397" ph="×" />
                 <marker date="1529077172857" expanded="true" signature="1945:1952" ph="×" />
@@ -42,12 +41,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact_me.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="contact_me.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mail/contact_me.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+              <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/node_modules/balanced-match/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="254">
+                <caret line="58" column="129" lean-forward="false" selection-start-line="58" selection-start-column="129" selection-end-line="58" selection-end-column="129" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -67,16 +79,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="248">
               <caret line="2937" column="13" lean-forward="false" selection-start-line="2937" selection-start-column="13" selection-end-line="2937" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="agency.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/agency.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="737" column="2" lean-forward="false" selection-start-line="737" selection-start-column="1" selection-end-line="737" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -131,6 +133,7 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/contact_me.js" />
         <option value="$PROJECT_DIR$/mail/contact_me.php" />
+        <option value="$PROJECT_DIR$/node_modules/balanced-match/README.md" />
       </list>
     </option>
   </component>
@@ -196,6 +199,17 @@
               <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="mail" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="balanced-match" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -326,12 +340,12 @@
       <workItem from="1526126943169" duration="185000" />
       <workItem from="1529053949147" duration="5844000" />
       <workItem from="1529062691947" duration="5000" />
-      <workItem from="1529062759091" duration="8146000" />
+      <workItem from="1529062759091" duration="8392000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29038000" />
+    <option name="totallyTimeSpent" value="29284000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -589,7 +603,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="598" column="34" lean-forward="true" selection-start-line="598" selection-start-column="34" selection-end-line="598" selection-end-column="34" />
+          <caret line="598" column="34" lean-forward="false" selection-start-line="598" selection-start-column="34" selection-end-line="598" selection-end-column="34" />
           <folding>
             <element signature="e#28445#28451#0" expanded="true" />
           </folding>
@@ -599,7 +613,7 @@
     <entry file="file://$PROJECT_DIR$/js/contact_me.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="409">
-          <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+          <caret line="29" column="10" lean-forward="false" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
           <folding>
             <marker date="1529077172857" expanded="true" signature="1390:1397" ph="×" />
             <marker date="1529077172857" expanded="true" signature="1945:1952" ph="×" />
@@ -610,8 +624,19 @@
     <entry file="file://$PROJECT_DIR$/mail/contact_me.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/balanced-match/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="254">
+            <caret line="58" column="129" lean-forward="false" selection-start-line="58" selection-start-column="129" selection-end-line="58" selection-end-column="129" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
