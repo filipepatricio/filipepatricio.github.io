@@ -65,8 +65,14 @@
     var hash = this.id;
     window.location.hash = hash;
     history.pushState('', document.title, window.location.pathname);
+    stopVideos(e)
   })
 
+  function stopVideos(t) {
+    var o = $(t.target).find("iframe");
+    o.each(function(t, o) {
+      $(o).attr("src", $(o).attr("src"))
+    });
+  }
 })(jQuery); // End of use strict
-
 
