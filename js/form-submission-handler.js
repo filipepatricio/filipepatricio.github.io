@@ -62,52 +62,61 @@ function getFormData() {
   return data;
 }
 
-function handleFormSubmit(event) {  // handles form submit withtout any jquery
-  event.preventDefault();           // we are submitting via xhr below
-  var data = getFormData();         // get the values submitted in the form
-
-  /* OPTION: Remove this comment to enable SPAM prevention, see README.md
-  if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
-    return false;
-  }
-  */
-
-  if( data.email && !validEmail(data.email) ) {   // if email is not valid show error
-    var invalidEmail = document.getElementById("email-invalid");
-    if (invalidEmail) {
-      invalidEmail.style.display = "block";
-      return false;
-    }
-  } else {
-    var url = event.target.action;  //
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', url);
-    // xhr.withCredentials = true;
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.onreadystatechange = function() {
-      console.log( xhr.status, xhr.statusText )
-      console.log(xhr.responseText);
-      $('#success').html("<div class='alert alert-success'>");
-      $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-        .append("</button>");
-      $('#success > .alert-success')
-        .append("<strong>Your message has been sent. </strong>");
-      $('#success > .alert-success')
-        .append('</div>');
-      //clear all fields
-      $('#gform').trigger("reset");
-    };
-    // url encode form data for sending as post data
-    var encoded = Object.keys(data).map(function(k) {
-      return encodeURIComponent(k) + "=" + encodeURIComponent(data[k])
-    }).join('&')
-    xhr.send(encoded);
-  }
-}
 function loaded() {
   console.log("Contact form submission handler loaded successfully.");
   // bind to the submit event of our form
-  var form = document.getElementById("gform");
-  form.addEventListener("submit", handleFormSubmit, false);
+  $("#gform input,#gform textarea").jqBootstrapValidation({
+    preventSubmit: true,
+    submitError: function($form, event, errors) {
+      // additional error messages or events
+    },
+    submitSuccess: function($form, event) {
+      event.preventDefault(); // prevent default submit behaviour
+      var data = getFormData();         // get the values submitted in the form
+
+      /* OPTION: Remove this comment to enable SPAM prevention, see README.md */
+      if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
+        return false;
+      }
+      if( data.email != "" && !validEmail(data.email) ) {   // if email is not valid show error
+        var invalidEmail = document.getElementById("email-invalid");
+        if (invalidEmail) {
+          invalidEmail.style.display = "block";
+          return false;
+        }
+      } else {
+        var url = event.target.action;  //
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', url);
+        // xhr.withCredentials = true;
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function() {
+          console.log( xhr.status, xhr.statusText )
+          console.log(xhr.responseText);
+          $('#success').html("<div class='alert alert-success'>");
+          $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+            .append("</button>");
+          $('#success > .alert-success')
+            .append("<strong>Your message has been sent. </strong>");
+          $('#success > .alert-success')
+            .append('</div>');
+          //clear all fields
+          $('#gform').trigger("reset");
+        };
+        // url encode form data for sending as post data
+        var encoded = Object.keys(data).map(function(k) {
+          return encodeURIComponent(k) + "=" + encodeURIComponent(data[k])
+        }).join('&')
+        xhr.send(encoded);
+      }
+    },
+    filter: function() {
+      return $(this).is(":visible");
+    },
+  })
 };
 document.addEventListener("DOMContentLoaded", loaded, false);
+
+$('#name').focus(function() {
+  $('#success').html('');
+});

@@ -594,7 +594,7 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" name="phone" id="phone" type="tel" placeholder="Your Phone" required="optional" data-validation-required-message="Please enter your phone number.">
+                                <input class="form-control" name="phone" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -609,6 +609,7 @@
                             <div id="success"></div>
                             <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
                         </div>
+                        <input id="honeypot" type="text" name="honeypot" value="" />
                     </div>
                 </form>
             </div>

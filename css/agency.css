@@ -769,3 +769,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   font-family: 'Courier New', 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #888;
 }
+
+#honeypot {
+  display: none; /*makes the field not visible to humans*/
+}
