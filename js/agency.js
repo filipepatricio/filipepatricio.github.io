@@ -42,30 +42,24 @@
   // Hide navbar when modals trigger
   $('.portfolio-modal').on('show.bs.modal', function(e) {
     $(".navbar").addClass("d-none");
+    var modal = this;
+    var hash = modal.id;
+    history.pushState('', document.title, window.location.pathname);
+    window.location.hash = hash;
+    //Prevent browser to go Back when a modal is showing.. just close modal
+    window.onhashchange = function() {
+      if (!location.hash) {
+        $(modal).modal('hide');
+      }
+    };
   })
   $('.portfolio-modal').on('hidden.bs.modal', function(e) {
     $(".navbar").removeClass("d-none");
+    var hash = this.id;
+    window.location.hash = hash;
+    history.pushState('', document.title, window.location.pathname);
   })
 
 })(jQuery); // End of use strict
 
 
-//Back Action when is showing Modal
-$('div.modal').on('show.bs.modal', function() {
-  var modal = this;
-  var hash = modal.id;
-  history.pushState('', document.title, window.location.pathname);
-  window.location.hash = hash;
-  //Prevent browser to go Back when a modal is showing.. just close modal
-  window.onhashchange = function() {
-    if (!location.hash) {
-      $(modal).modal('hide');
-    }
-  };
-});
-
-$('div.modal').on('hide', function() {
-  var hash = this.id;
-  window.location.hash = hash;
-  history.pushState('', document.title, window.location.pathname);
-});
