@@ -95,7 +95,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
       $('#success > .alert-success')
         .append('</div>');
       //clear all fields
-      $('#contactForm').trigger("reset");
+      $('#gform').trigger("reset");
     };
     // url encode form data for sending as post data
     var encoded = Object.keys(data).map(function(k) {
